@@ -1,0 +1,258 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+/* nav bar start */
+.nav_bar{
+    margin: 5px 100px;
+    display: flex;
+    /* border: 1px solid black; */
+    background-color: transparent;
+    border-bottom: 4px solid black;
+}
+.dnone{
+    margin-bottom:1px solid none;
+}
+.name h1{
+    margin-top: 12px;
+    margin-right: 550px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.744);
+}
+.nav_bar a{
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+}
+.nav_bar li{
+    font-size: 18px;
+    font-weight:600 ;
+    display: inline;
+    margin-left: 50px;
+}
+/* nav bar end */
+.image_container img{
+    width: 180px;
+    height: 250px;
+    border: 3px solid black;
+    padding:  1px 2px;
+    border-radius: 50%;
+float: right;
+margin: 30px 100px;
+/* display: block; */
+}
+.intro_container{
+    background-color: #EFB153;
+    width: 100%;
+    height: 360px;
+    margin-top: 293px;
+    position: relative;
+    z-index: 1;
+}
+.intro_container h1{
+    padding: 0px 70px;
+    font-size: 70px;
+    position: absolute;
+    top: -90px;
+    margin-left: 30px;
+}
+.intro_container p{
+    padding: 0px 50px;
+    padding-top: 70px;
+    font-size: 20px;
+}
+/* Responsiveness for 1024px */
+@media (max-width:1440px) {
+    .name h1{
+        margin-right: 550px;
+    }
+}
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .name h1{
+        margin-right: 230px;
+    }
+    .intro_container p{
+        margin: 0px 70px;
+    }
+}
+@media (max-width:1024px) {
+    .name h1{
+        margin-right: 250px;
+    }
+    .nav_bar{
+        margin: 5px 60px;
+    }
+}
+@media (max-width:768px) {
+    .name h1{
+        margin-right: 100px;
+    }
+    .nav_bar{
+        margin: 5px 40px;
+    }
+}
+@media (max-width:426px) {
+    .nav_bar{
+        border-bottom: 3px solid black;
+    }
+    .name h1{
+        padding-top: 2px;
+        margin-right: 5px;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .nav_bar li{
+      
+        margin-left: 20px;
+    }
+    .nav_bar li{
+        font-size: 13px;
+       
+    }
+    
+    .nav_bar{
+        margin: 5px 20px;
+    }
+    .image_container img{
+        width: 100px;
+        height: 150px;
+        border: 3px solid black;
+        padding:  1px 5px;
+        border-radius: 50%;
+    float: right;
+    margin: 15px 30px;
+    /* display: block; */
+    }
+    
+    .intro_container{
+        height: 340px;
+        margin-top: 180px;
+    }
+    .intro_container h1{
+        padding: 0px 50px;
+        font-size: 45px;
+        top: -60px;
+        margin-left: 5px;
+    }
+    .intro_container p{
+        padding: 0px 50px;
+        padding-top: 40px;
+        font-size: 18px;
+    }
+   
+}
+@media (max-width:376px){
+    .intro_container h1{
+        font-size: 30px;
+        top: -40px;
+    }
+    .intro_container{
+        height: 500px;
+    }
+    .nav_bar li{
+      
+        margin-left: 15px;
+        margin-top: 3px;
+        font-size: 10px;
+
+    }
+    .name h1{
+        margin-right: 20px;
+    }
+  
+}
+@media (max-width:320px) {
+    .nav_bar{
+        border-bottom: 3px solid black;
+    }
+    .name h1{
+        padding-top: 3px;
+        margin-right: 20px;
+        font-size: 12px;
+        font-weight: 900;
+    }
+    .nav_bar li{
+      
+        margin-left: 2px;
+        font-size: 10px;
+
+    }
+    
+    .intro_container p{
+        padding: 0px 20px;
+        padding-top: 30px;
+        font-size: 16px;
+    }
+    .intro_container h1{
+        padding: 0px 25px;
+        font-size: 35px;
+        top: -45px;
+        margin-left: 5px;
+    }
+   
+}
+
+
+/* Style the navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+nav ul li {
+    float: left;
+}
+
+/* Style the buttons inside the list */
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 1px;
+    text-decoration: none;
+}
+
+/* Dropdown button */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+/* .dnone{
+    margin-bottom:1px solid none;
+} */
